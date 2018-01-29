@@ -1,6 +1,37 @@
-
-<h1 class="ui inverted header">
-Imagine-a-Company
-</h1>
-<h2>Do whatever you want when you want to.</h2>
-<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+<div class="ui text container">
+    <img [src]="logo" width="25%">
+</div>
+<div class="ui center aligned container">
+        <div class="center aligned column">
+    <div class="ui secondary stackable menu massive">
+        <a 
+            [routerLink]=" ['./'] "
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]= "{exact: true}" 
+            class="item">
+            Home
+        </a>
+        <a 
+            [routerLink]=" ['./news'] "
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]= "{exact: true}" 
+            class="item">
+            News
+        </a>
+        <a 
+            [routerLink]=" ['./about'] "
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]= "{exact: true}" 
+            class="item">
+            About
+        </a>
+        <a 
+            [routerLink]=" ['./contact'] "
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]= "{exact: true}" 
+            class="item">
+            Contact
+        </a>
+    </div>
+    </div>
+</div>

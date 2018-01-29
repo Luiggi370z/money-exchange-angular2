@@ -1,15 +1,18 @@
 <div class="ui text container">
-    <h3 class="ui header">HISTORIC PRICE</h3>
+    <h1>HISTORIC PRICE</h1>
     <div class="ui two column stackable grid container">
       <div 
         *ngFor="let key of rates | myKeys"
         class="center aligned column">
           <div class="ui statistic small">
-              <div class="value">
-                <i class="plane icon"></i> {{rates[key]}}
-              </div>
               <div class="label">
-                {{key}}
+                  {{key}}
+                </div>
+              <div class="value">
+                <span class="symbol">
+                  {{ key | myCurrencySymbol }}
+                </span>
+                {{ rates[key] | number : '1.2-2' }}
               </div>
             </div>
       </div>

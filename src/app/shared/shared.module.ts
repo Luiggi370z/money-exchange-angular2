@@ -3,6 +3,7 @@ import { CommonModule }  from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 
 import { KeysPipe } from './keys.pipe';
+import { CurrencySymbolPipe } from './currencySymbol.pipe';
 
 @NgModule({
     imports: [
@@ -12,9 +13,10 @@ import { KeysPipe } from './keys.pipe';
     exports: [
         CommonModule,
         FormsModule,
-        KeysPipe
+        KeysPipe,
+        CurrencySymbolPipe,
     ],
-    declarations: [ KeysPipe ],
+    declarations: [ KeysPipe, CurrencySymbolPipe ],
     providers: [],
 })
 export class SharedModule { }

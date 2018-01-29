@@ -4,10 +4,10 @@ import { Observable } from 'rxjs/Rx';
 import { ApiService, AppStateService } from '../../core';
 import { Subscription } from 'rxjs/Subscription';
 
-
 @Component({
     selector: 'me-historic',
-    templateUrl: 'historic.component.html'
+    templateUrl: 'historic.component.html',
+    styleUrls: [ './historic.component.css' ],
 })
 
 export class HistoricComponent implements OnInit {

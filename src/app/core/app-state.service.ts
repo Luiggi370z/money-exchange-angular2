@@ -16,7 +16,7 @@ export class AppStateService {
   public _state: IInternalStateType = {
     currencyFrom: 'USD',
     currencyTo: 'EUR',
-    refreshInterval: 10000,
+    refreshInterval: 600000,
   };
 
   public get state(): IInternalStateType {

@@ -1,5 +1,15 @@
-/*styles for home content only*/
-/* .main.segment > me-converter form {
-    min-height: 300px;
-    padding: 1em 0em;
-  } */
+
+  .ui.vertical.header,
+  .ui.vertical.main {
+    padding: 2em 0em;
+  }
+
+  .ui.vertical.stripe,
+  .footer.segment {
+    padding: 5em 0em;
+  }
+
+  .ui.vertical.main,
+  .footer.segment {
+    background: rgba(0,0,0,.05);
+  }
