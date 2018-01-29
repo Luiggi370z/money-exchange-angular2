@@ -1,0 +1,23 @@
+<div>
+  <div class="ui inverted vertical center aligned segment">
+    <div class="ui text container">
+      <me-header></me-header>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe main segment">
+    <me-converter 
+      [currencyFrom]="state.currencyFrom"
+      [currencyTo]="state.currencyTo">
+    </me-converter>
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <me-historic></me-historic>
+  </div>
+
+  <div class="ui inverted vertical footer segment">
+    <me-footer></me-footer>
+  </div>
+
+</div>

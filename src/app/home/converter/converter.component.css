@@ -1,0 +1,5 @@
+/*styles for home content only*/
+.main.container {
+    min-height: 300px;
+    padding: 1em 0em;
+  }

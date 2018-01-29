@@ -1,0 +1,38 @@
+<form (ngSubmit)="calculate()" 
+    autocomplete="off" 
+    class="ui middle aligned stackable grid main container">
+  <div class="bottom aligned row">
+    <div class="ui three column centered stackable grid">
+      <div class="middle aligned column">
+      <div class="ui fluid massive left icon input">
+        <input 
+          [textMask]="{mask: mask}" 
+          [(ngModel)]="inputValue" 
+          [ngModelOptions]="{standalone: true}"
+          type="text"
+          placeholder="USD">
+        <i class="dollar icon"></i>
+        
+      </div>
+    </div>
+    <div class="middle aligned column">
+      <div class="ui fluid massive left icon input">
+        <input
+          [textMask]="{mask: mask}"
+          [(ngModel)]="calculatedValue" 
+          readonly
+          placeholder="EUR"
+          [ngModelOptions]="{standalone: true}">
+          <i class="euro icon"></i>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="center aligned column">
+      <button 
+        class="ui huge button"
+        [disabled]="!inputValue">Calculate</button>
+    </div>
+  </div>
+</form>
