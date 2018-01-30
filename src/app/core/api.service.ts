@@ -5,7 +5,11 @@ import 'rxjs/add/operator/catch';
 
 import { Rates } from '../shared';
 
+// Using Public backend:
 const endpointUrl = 'http://api.fixer.io/latest';
+
+// Using Local Backend:
+// const endpointUrl = 'http://localhost:52479/api/rates/latest';
 
 @Injectable()
 export class ApiService {
