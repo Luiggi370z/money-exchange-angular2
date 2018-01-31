@@ -7,7 +7,7 @@
   ],
   "author": "Luis Arpasi",
   "homepage": "https://github.com/luiggi370z/money-exchange-angular2",
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && cross-env BUILD_AOT=1 npm run webpack -- --config config/webpack.prod.js  --progress --profile --bail",
     "build:aot": "npm run build:aot:prod",
@@ -160,10 +160,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gdi2290/angular-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gdi2290/angular-starter/issues"
+    "url": "https://github.com/luiggi370z/money-exchange-angular2.git"
   },
   "engines": {
     "node": ">= 4.2.1",
