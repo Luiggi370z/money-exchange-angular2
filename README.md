@@ -42,8 +42,6 @@ npm run build:prod
 ```
 go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http://localhost:3000) in your browser.
 
-Click on Rates and try it!!
-
 **Connection to REST API Service**
 You can change the url in `src/app/core/api.service.ts` line 9 to use a local server or a public server.
 
