@@ -54,7 +54,7 @@ You can change the url in `src/app/core/api.service.ts` line 9 to use a local se
     * [Running the app](#running-the-app)
 * [Configuration](#configuration)
 
-##Stack
+## Stack
 * Angular Starter Kit from AngularClass.
 * Angular 2 (5.x).
 * Webpack.
