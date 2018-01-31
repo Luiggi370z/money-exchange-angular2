@@ -1,5 +1,5 @@
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 
 import { ApiService } from '../../core';
@@ -10,13 +10,13 @@ import { ApiService } from '../../core';
     styleUrls: [ './converter.component.css' ],
 })
 
-export class ConverterComponent implements OnInit {
+export class ConverterComponent {
     public calculatedValue;
     public inputValue;
     public mask: Array<string | RegExp>;
 
-    @Input() currencyFrom;
-    @Input() currencyTo;
+    @Input() public currencyFrom;
+    @Input() public currencyTo;
 
     constructor(private apiService: ApiService) {
         this.mask = createNumberMask({
@@ -33,6 +33,4 @@ export class ConverterComponent implements OnInit {
                 this.calculatedValue = parseFloat(this.inputValue) * rate;
             });
     }
-
-    ngOnInit() { }
 }

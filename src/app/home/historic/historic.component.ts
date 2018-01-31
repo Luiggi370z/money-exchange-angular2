@@ -21,14 +21,14 @@ export class HistoricComponent implements OnInit {
         private apiService: ApiService) {
      }
 
-    ngOnInit() {
+    public ngOnInit() {
         this.localState.refresher = Observable
             .timer(0, this.appState.get('refreshInterval'))
             .flatMap((t) => this.apiService.getAllRates(this.appState.get('currencyFrom')))
             .subscribe((result) => this.rates = result.rates);
     }
 
-    OnDestroy() {
+    public OnDestroy() {
         this.localState.refresher.unsubscribe();
     }
 }

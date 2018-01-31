@@ -38,7 +38,7 @@ export class ApiService {
 
     private catchBadResponse(err: any, source: Observable<any>) {
         // log and handle the exception
-        console.error('There was an error fetching data from provider.', err)
+        console.error('There was an error fetching data from provider.', err);
         return new Observable<Rates>();
     }
 }
